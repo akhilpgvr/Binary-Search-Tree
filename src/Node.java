@@ -4,7 +4,7 @@ public class Node {
     Node leftChild;
     Node rightChild;
 
-    Node(int data) {
+    public Node(int data) {
         this.data = data;
         this.leftChild = null;
         this.rightChild = null;
