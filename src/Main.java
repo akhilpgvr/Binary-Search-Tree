@@ -17,5 +17,12 @@ public class Main {
         root = bst.insertChild(root, 66);
         root = bst.insertChild(root, 56);
         root = bst.insertChild(root, 15);
+
+        System.out.println("..................................");
+        System.out.println("BST Inorder Traversal");
+        System.out.println("..................................");
+        bst.inorderTraversal(root);
+        System.out.println();
+        System.out.println("..................................");
     }
 }

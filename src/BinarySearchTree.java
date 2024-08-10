@@ -1,3 +1,5 @@
+import com.sun.security.jgss.GSSUtil;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -18,5 +20,16 @@ public class BinarySearchTree {
         else root.rightChild = insertChild(root.rightChild, data);
 
         return root;
+    }
+
+    public void inorderTraversal(Node root) {
+
+        //if node is null--> p
+        if(root == null) return;
+        //make recursion to perform inorder traversal in left subtree
+        inorderTraversal(root.leftChild);
+        System.out.print(" "+root.data+ " ");
+        //make recursion to perform inorder traversal in left subtree
+        inorderTraversal(root.rightChild);
     }
 }
