@@ -24,5 +24,12 @@ public class Main {
         bst.inorderTraversal(root);
         System.out.println();
         System.out.println("..................................");
+
+        System.out.println("..................................");
+        System.out.println("Search BST");
+        System.out.println("..................................");
+        bst.searchBST(root, 15);
+        bst.searchBST(root, 99);
+        System.out.println("..................................");
     }
 }
